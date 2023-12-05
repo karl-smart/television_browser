@@ -1,0 +1,13 @@
+.channel {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  width: 10rem;
+}
+
+.channel-logo {
+  margin: auto 0;
+
+  height: 2rem;
+}
