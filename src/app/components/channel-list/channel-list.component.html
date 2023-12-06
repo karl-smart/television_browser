@@ -5,7 +5,11 @@
     class="channel"
     [routerLink]="['/channel', channel.id]"
   >
-    <img src="{{ channel.images.logo }}" class="channel-logo" />
+    <img
+      src="{{ channel.images.logo }}"
+      alt="channel logo"
+      class="channel-logo"
+    />
     <p>{{ channel.title }}</p>
   </div>
 </div>
