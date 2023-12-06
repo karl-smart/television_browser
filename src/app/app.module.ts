@@ -5,9 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChannelListComponent } from './components/channel-list/channel-list.component';
+import { ChannelDetailsComponent } from './components/channel-details/channel-details.component';
 
 @NgModule({
-  declarations: [AppComponent, ChannelListComponent],
+  declarations: [AppComponent, ChannelListComponent, ChannelDetailsComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
