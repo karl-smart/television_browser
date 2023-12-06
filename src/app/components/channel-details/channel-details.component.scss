@@ -1,0 +1,21 @@
+.programme {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.broadcast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  border: 1px solid #eee;
+  border-radius: 1rem;
+
+  padding: 1rem;
+}
+
+.long-duration {
+  background-color: #728c69;
+}

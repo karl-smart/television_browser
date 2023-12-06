@@ -1,1 +1,16 @@
-<p>channel-details works!</p>
+<div *ngIf="programme" class="programme">
+  <div
+    *ngFor="let program of programme[0].schedules"
+    ngClass="{'long-duration' :  !isBroadCastLongerThan60Minutes(program) }"
+    [class.long-duration]="isBroadCastLongerThan60Minutes(program)"
+    class="broadcast"
+  >
+    <img src="{{ program.wallpaper }}" style="width: 5rem" />
+    <h1>{{ program.item.title | json }}</h1>
+    <div>
+      <p><strong>Fra</strong> {{ program.startDate | date : "HH:mm" }}</p>
+      <p><strong>Til</strong> {{ program.endDate | date : "HH:mm" }}</p>
+    </div>
+    <p>{{ program.item.description }}</p>
+  </div>
+</div>
