@@ -1,9 +1,26 @@
+.channel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  margin: 1rem 0 0 1rem;
+}
+
 .channel {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 
-  width: 10rem;
+  width: 15rem;
+
+  background-color: #eee;
+  padding: 0.3rem;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ddd;
+  }
 }
 
 .channel-logo {

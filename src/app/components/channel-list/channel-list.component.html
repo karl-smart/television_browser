@@ -1,9 +1,11 @@
-<h1>list:</h1>
-<div
-  *ngFor="let channel of channels"
-  class="channel"
-  [routerLink]="['/channel', channel.id]"
->
-  <img src="{{ channel.images.logo }}" class="channel-logo" />
-  <p>{{ channel.title }}</p>
+<h1>Programmer</h1>
+<div class="channel-list">
+  <div
+    *ngFor="let channel of channels"
+    class="channel"
+    [routerLink]="['/channel', channel.id]"
+  >
+    <img src="{{ channel.images.logo }}" class="channel-logo" />
+    <p>{{ channel.title }}</p>
+  </div>
 </div>
