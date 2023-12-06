@@ -50,6 +50,6 @@ export class ChannelDetailsComponent {
     const milliseconds = Math.abs(end - start);
     const hours = milliseconds / 3600000;
 
-    return hours >= 1;
+    return hours > 1;
   }
 }
