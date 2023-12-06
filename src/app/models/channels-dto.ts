@@ -1,6 +1,6 @@
 import { Channel } from './channel';
 
-export interface ChannelsList {
+export interface ChannelsDTO {
   id: string;
   customFields: {
     PathIdSegment: string;
